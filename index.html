@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>CAPTCHA</h1>
+    <br/>
+    <button type="button" class="button" id="show_captcha_button">Show Captcha window</button>
+
+    <!-- The Modal -->
+    <div id="captcha_modal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Please verify that you are not a robot</h2>
+                <span class="close_captcha">&times;</span>
+            </div>
+            <div class="modal-body">
+                <canvas id='textCanvas'></canvas>
+                <img id='image' class="chaptcha_image" src="" /> <button type="button" class="verify_button" id="refreshButton">&#8634;</button>
+
+            </div>
+            <div class="modal-body">
+                <input type="text" class="captcha_textfield" id="txtInput" /> <button type="button" class="verify_button" id="verifyButton">Verify</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
